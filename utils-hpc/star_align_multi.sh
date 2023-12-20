@@ -42,7 +42,7 @@ if [ ! -d "${project_dir}/star_out" ]; then
   mkdir "${project_dir}/star_out"
 fi
 
-sample_name=$(awk -v ArrayTaskID=$SLURM_ARRAY_TASK_ID '$1==ArrayTaskID {print $3}' $table)
+sample_name=$(awk -v ArrayTaskID=$SLURM_ARRAY_TASK_ID '$1==ArrayTaskID {print $2}' $table)
 
 # get names and paths of files for merging
 file_names=$(awk -v ArrayTaskID=$SLURM_ARRAY_TASK_ID '$1==ArrayTaskID {print $3}' $table)
