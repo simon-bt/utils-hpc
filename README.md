@@ -7,6 +7,7 @@ Utility scripts for SLURM jobs.
 List of stand-alone utilities:
 
 * [download_fastqs.sh](utils-hpc/download_fastqs.sh) - downloads FASTQ files from SRA repository with [SRA Toolkit](https://www.ncbi.nlm.nih.gov/sra/docs/sradownload/) and perform quality control with [FastQC](https://github.com/s-andrews/FastQC)
+* [fastqc_report.sh](utils-hpc/fastqc_report.sh) - performs quality control with [FastQC](https://github.com/s-andrews/FastQC) and generates a [MultiQC report](https://multiqc.info)
 * [download_bams.sh](utils-hpc/download_bam.sh) - downloads BAM files from SRA repository with [SRA Toolkit](https://www.ncbi.nlm.nih.gov/sra/docs/sradownload/) and convert them to FASTQ files with [bedtools](https://github.com/arq5x/bedtools2)
 * [star_index.sh](utils-hpc/star_index.sh) - generates [STAR](https://github.com/alexdobin/STAR) index
 * [star_align.sh](utils-hpc/star_align.sh) - performs RNA-sequencing data alignment to [STAR](https://github.com/alexdobin/STAR) index and generates gene counts, BAM files and bigwig files
